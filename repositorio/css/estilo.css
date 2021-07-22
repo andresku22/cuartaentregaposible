@@ -1,0 +1,334 @@
+* {
+  margin: 0px;
+  padding: 0px; }
+
+.header {
+  display: flex;
+  padding-top: 20px;
+  justify-content: center;
+  align-items: center;
+  background-color: #06060e;
+  background-image: linear-gradient(to top, #c3bac4, #50058d); }
+  .header__titulo {
+    font-size: 50px;
+    font-family: fantasy;
+    padding-left: 100px;
+    text-transform: capitalize;
+    color: #1c1b1d; }
+
+.divIndex {
+  display: flex;
+  flex-direction: column;
+  padding: 10px; }
+  .divIndex__imagen {
+    margin: 20px;
+    width: 400px;
+    height: 400px; }
+  .divIndex__parrafo, .divVinos__parrafo {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #88479c;
+    padding-left: 20px; }
+
+.footer {
+  display: flex;
+  padding-right: 100px;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-top: 50px;
+  align-items: center;
+  height: 200px;
+  background-image: linear-gradient(to top, #c3bac4, #50058d); }
+  .footer__imagen {
+    width: 50px;
+    height: 50px;
+    margin: 10px; }
+
+.divVinos {
+  display: flex;
+  flex-direction: column;
+  margin: 5px; }
+  .divVinos__imagen {
+    width: 250px;
+    height: 300px; }
+  .divVinos__titulo {
+    padding-top: 20px;
+    margin: 5px;
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    justify-content: center;
+    text-align: center;
+    text-transform: capitalize;
+    color: #88479c; }
+  .divVinos__parrafo {
+    color: #691674;
+    margin: 15px;
+    padding-top: 50px; }
+
+.divHabanos {
+  display: flex;
+  flex-direction: column; }
+  .divHabanos__imagen {
+    width: 300px;
+    width: 300px; }
+  .divHabanos__titulo {
+    color: #e5b4f1;
+    margin: 15px; }
+  .divHabanos__parrafo {
+    color: #691674;
+    margin: 15px; }
+
+.contacto {
+  padding-left: 20px;
+  padding-top: 20px; }
+  .contacto__form {
+    color: #88479c;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 19px; }
+  .contacto__colorBoton {
+    background-color: #88479c;
+    color: white;
+    text-transform: capitalize; }
+
+.divInfoContacto {
+  margin-top: 21px; }
+  .divInfoContacto__titulo {
+    text-transform: capitalize;
+    color: #e5b4f1;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px; }
+  .divInfoContacto__parrafo {
+    color: #88479c;
+    text-transform: capitalize; }
+
+.divEspumantes {
+  display: flex;
+  flex-direction: column;
+  margin: 30px; }
+  .divEspumantes__imagen {
+    width: 300px;
+    /*Ancho de 300*/
+    height: 400px;
+    /*Alto de 400*/ }
+  .divEspumantes__titulo {
+    text-transform: capitalize;
+    color: #e5b4f1;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px; }
+  .divEspumantes__parrafo {
+    color: #88479c;
+    text-transform: capitalize; }
+
+.sectionVinos {
+  margin: 15px; }
+  .sectionVinos__titulo {
+    text-transform: capitalize;
+    color: #e5b4f1;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px; }
+  .sectionVinos__parrafo {
+    text-transform: capitalize;
+    color: #88479c; }
+
+@media only screen and (max-width: 600px) {
+  #grilla {
+    display: grid;
+    height: 100%;
+    grid-template-columns: 100%;
+    grid-template-rows: 20% 10% 50% 20%;
+    grid-template-areas: "header" "nav" "main" "footer"; }
+  #grillaIndex {
+    display: grid;
+    height: 100%;
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: "foto1 " "foto2" "foto3" "foto4" "foto5" "foto6";
+    column-gap: 20px;
+    row-gap: 20px; }
+  #grillaTres {
+    display: grid;
+    height: 100%;
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "foto1" "foto2" "foto3";
+    column-gap: 5px;
+    row-gap: 5px; }
+  #grillaEspumantes {
+    display: grid;
+    height: 100%;
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: "foto1 " "foto2" "foto3" "foto4" "foto5" "foto6";
+    column-gap: 20px;
+    row-gap: 20px; }
+  #grillaVinos {
+    display: grid;
+    height: 100%;
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: "foto1 " "foto2" "foto3" "foto4" "foto5" "foto6" "info1" "info2" "info3";
+    column-gap: 10px;
+    row-gap: 10px; }
+  #grillaHabanos {
+    display: grid;
+    height: 100%;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: "foto1 " "foto2" "foto3" "foto4" "foto5" "foto6";
+    column-gap: 10px;
+    row-gap: 15px; }
+  ul {
+    flex-direction: row; }
+  header {
+    grid-area: header; }
+  nav {
+    grid-area: nav; }
+  main {
+    grid-area: main; }
+  footer {
+    grid-area: footer; } }
+
+@media only screen and (min-width: 600px) {
+  #grilla {
+    display: grid;
+    height: 100%;
+    grid-template-columns: 100%;
+    grid-template-rows: 20% 10% 60% 10%;
+    grid-template-areas: "header" "nav" "main" "footer"; }
+  #grillaIndex {
+    display: grid;
+    height: 100%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "foto1  foto2" "foto3  foto4" "foto5 foto6";
+    column-gap: 20px;
+    row-gap: 30px;
+    align-items: center;
+    justify-items: center; }
+  #grillaTres {
+    display: grid;
+    height: 100%;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "foto1" "foto2" "foto3";
+    align-items: center;
+    justify-items: center;
+    column-gap: 20px;
+    row-gap: 30px; }
+  #grillaEspumantes {
+    display: grid;
+    height: 100%;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "foto1 foto2 " "foto3  foto4" "foto5 foto6";
+    column-gap: 10px;
+    row-gap: 10px; }
+  #grillaHabanos {
+    display: grid;
+    height: 100%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "foto1 foto2 " "foto3  foto4" "foto5 foto6";
+    column-gap: 10px;
+    row-gap: 15px; }
+  #grillaVinos {
+    display: grid;
+    height: 100%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "foto1 foto2 " "foto3 foto4" "foto5 foto6" "info1 info2" "info3";
+    column-gap: 10px;
+    row-gap: 10px; }
+  ul {
+    flex-direction: row; }
+  header {
+    grid-area: header; }
+  nav {
+    grid-area: nav; }
+  main {
+    grid-area: main; }
+  footer {
+    grid-area: footer; } }
+
+@media only screen and (min-width: 1000px) {
+  #grilla {
+    display: grid;
+    height: 100%;
+    grid-template-columns: 100%;
+    grid-template-rows: 20% 10% 60% 10%;
+    grid-template-areas: "header" "nav" "main" "footer"; }
+  #grillaIndex {
+    display: grid;
+    height: 100%;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "foto1 foto2  foto3" "foto4  foto5 foto6";
+    column-gap: 10px;
+    row-gap: 10px; }
+  #grillaTres {
+    display: grid;
+    height: 100%;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "foto1" "foto2" "foto3";
+    justify-items: center;
+    column-gap: 20px;
+    row-gap: 30px; }
+  #grillaEspumantes {
+    display: grid;
+    height: 100%;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "foto1 foto2 foto3 " "foto4  foto5 foto6";
+    column-gap: 10px;
+    row-gap: 10px; }
+  #grillaVinos {
+    display: grid;
+    height: 100%;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "foto1 foto2  foto3" "foto4  foto5 foto6"  " info 1 info2 info3";
+    column-gap: 10px;
+    row-gap: 10px; }
+  #grillaHabanos {
+    display: grid;
+    height: 100%;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "foto1 foto2  foto3" "foto4  foto5 foto6";
+    column-gap: 10px;
+    row-gap: 10px; }
+  ul {
+    flex-direction: row; }
+  header {
+    grid-area: header; }
+  nav {
+    grid-area: nav; }
+  main {
+    grid-area: main; }
+  footer {
+    grid-area: footer; } }
+
+.imagenf {
+  width: 50px;
+  height: 50px;
+  margin-right: 25px; }
+
+#grillaContacto {
+  margin: 20px; }
+
+.colorBoton {
+  background-color: blueviolet;
+  color: #eff3eb; }
+
+.contacto {
+  color: black; }
+
+.infoContacto {
+  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; }
+
+#tituloContacto {
+  padding-left: 30px; }

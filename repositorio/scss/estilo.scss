@@ -1,0 +1,484 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+
+.header{
+    display: flex;
+    padding-top: 20px;
+    justify-content: center;
+    align-items: center;
+    background-color:rgb(6, 6, 14);
+    background-image: linear-gradient(to top, rgb(195, 186, 196), rgb(80, 5, 141) );
+
+    &__titulo {
+        
+     font-size: 50px;
+     font-family: fantasy;
+     padding-left: 100px;
+     text-transform: capitalize;
+     color: rgb(28, 27, 29);
+    
+    }
+}
+$colorPrincipal:rgb(136, 71, 156);
+
+$fuentePrincipal:Arial, Helvetica, sans-serif;
+$ancho: 600px;
+$alto: 800px;
+
+ .divIndex{
+     display: flex;
+     flex-direction: column;
+     padding: 10px;
+
+     &__imagen{
+         margin: 20px;
+         width: 400px;
+         height: 400px;
+
+     }
+
+     &__parrafo{
+        font-size: 20px;
+        font-family: $fuentePrincipal;
+        color: $colorPrincipal;
+        padding-left: 20px;
+        
+
+
+     }
+
+
+
+ }
+
+ .footer{ 
+    display: flex;
+    padding-right: 100px;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-top: 50px;
+    align-items: center;
+    height: 200px;
+    background-image: linear-gradient(to top, rgb(195, 186, 196), rgb(80, 5, 141) );
+    
+
+
+    &__imagen{
+        width: 50px;
+        height: 50px;
+        margin: 10px;
+        
+    }
+ }
+
+ .divVinos{
+     display: flex;
+	 flex-direction: column;
+     margin: 5px;
+
+
+
+&__imagen{
+    width: 250px;
+     height: 300px;
+
+}
+&__titulo{
+    padding-top: 20px;
+    margin: 5px;
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    justify-content: center;
+    text-align: center;
+    text-transform: capitalize;
+    color:$colorPrincipal
+    
+    
+
+}
+&__parrafo{
+    @extend .divIndex__parrafo;
+    color: rgb(105, 22, 116);
+    margin: 15px;
+    padding-top: 50px;
+   
+}
+
+ }
+
+ 
+
+ .divHabanos{
+    display: flex;
+    flex-direction: column;
+
+
+    &__imagen{
+        width: 300px;
+        width: 300px;
+
+
+    }
+
+&__titulo{
+    color: rgb(229, 180, 241);
+    margin: 15px;
+
+
+}
+
+&__parrafo{ 
+     
+      color: rgb(105, 22, 116);
+      margin: 15px;
+
+    
+
+}
+
+
+ }
+
+
+.contacto{ padding-left: 20px;
+    padding-top: 20px;
+
+
+    &__form{
+        color: $colorPrincipal;
+        font-family: $fuentePrincipal;
+        font-size: 19px;
+
+    }
+
+
+    &__colorBoton{
+        background-color: $colorPrincipal;
+        color: white;
+        text-transform: capitalize;
+    }
+}
+
+ .divInfoContacto{
+     margin-top: 21px;
+     
+
+
+    &__titulo{
+        text-transform: capitalize;
+        color: rgb(229, 180, 241);
+        font-family: $fuentePrincipal;
+        font-size: 25px;
+    }
+
+
+
+
+&__parrafo{
+    color: $colorPrincipal;
+    text-transform: capitalize;
+
+
+
+}
+
+ }
+
+ .divEspumantes{ 
+     display: flex;
+     flex-direction: column;
+     margin: 30px;
+
+&__imagen{
+width: $ancho/2; /*Ancho de 300*/
+height: $alto/2; /*Alto de 400*/
+
+}
+
+&__titulo{
+        text-transform: capitalize;
+        color: rgb(229, 180, 241);
+        font-family: $fuentePrincipal;
+        font-size: 25px;
+
+
+
+
+}
+
+
+
+&__parrafo{
+    color: $colorPrincipal;
+    text-transform: capitalize;
+
+
+
+
+}
+
+
+ }
+
+.sectionVinos{
+	margin: 15px;
+
+&__titulo{
+	text-transform: capitalize;
+        color: rgb(229, 180, 241);
+        font-family: $fuentePrincipal;
+        font-size: 25px;
+
+}
+
+&__parrafo{
+	text-transform: capitalize;
+	color:$colorPrincipal
+	
+}
+
+}
+
+
+
+ @media only screen and (max-width:600px) {
+	#grilla {
+		display: grid;
+		height: 100%;
+		grid-template-columns: 100%;
+		grid-template-rows: 20% 10% 50% 20%;
+		grid-template-areas: "header" "nav" "main" "footer";
+	}
+	#grillaIndex {
+		display: grid;
+		height: 100%;
+		grid-template-columns: 100%;
+		grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+		grid-template-areas: "foto1 ""foto2" "foto3" "foto4" "foto5" "foto6";
+		column-gap: 20px;
+		row-gap: 20px;
+	}
+	#grillaTres {
+		display: grid;
+		height: 100%;
+		grid-template-columns: 100%;
+		grid-template-rows: 1fr 1fr 1fr;
+		grid-template-areas: "foto1" "foto2" "foto3";
+		column-gap: 5px;
+		row-gap: 5px;
+	}
+	#grillaEspumantes {
+		display: grid;
+		height: 100%;
+		grid-template-columns: 100%;
+		grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+		grid-template-areas: "foto1 ""foto2" "foto3" "foto4" "foto5" "foto6";
+		column-gap: 20px;
+		row-gap: 20px;
+	}
+	#grillaVinos {
+		display: grid;
+		height: 100%;
+		grid-template-columns: 100%;
+		grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr ;
+		grid-template-areas: "foto1 ""foto2" "foto3" "foto4" "foto5" "foto6" "info1" "info2" "info3";
+		column-gap: 10px;
+		row-gap: 10px;
+	}
+	#grillaHabanos {
+		display: grid;
+		height: 100%;
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+		grid-template-areas: "foto1 ""foto2" "foto3" "foto4" "foto5" "foto6";
+		column-gap: 10px;
+		row-gap: 15px;
+	}
+	ul {
+		flex-direction: row;
+	}
+	header {
+		grid-area: header;
+	}
+	nav {
+		grid-area: nav;
+	}
+	main {
+		grid-area: main;
+	}
+	footer {
+		grid-area: footer;
+	}
+}
+@media only screen and (min-width:600px) {
+	#grilla {
+		display: grid;
+		height: 100%;
+		grid-template-columns: 100%;
+		grid-template-rows: 20% 10% 60% 10%;
+		grid-template-areas: "header" "nav" "main" "footer";
+	}
+	#grillaIndex {
+		display: grid;
+		height: 100%;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 1fr 1fr 1fr;
+		grid-template-areas: "foto1  foto2" "foto3  foto4" "foto5 foto6";
+		column-gap: 20px;
+		row-gap: 30px;
+		align-items: center;
+		justify-items: center;
+	}
+	#grillaTres {
+		display: grid;
+		height: 100%;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-rows: 1fr;
+		grid-template-areas: "foto1" "foto2" "foto3";
+		align-items: center;
+		justify-items: center;
+		column-gap: 20px;
+		row-gap: 30px;
+	}
+	#grillaEspumantes {
+		display: grid;
+		height: 100%;
+		grid-template-columns: 50% 50%;
+		grid-template-rows: 1fr 1fr 1fr;
+		grid-template-areas: "foto1 foto2 ""foto3  foto4" "foto5 foto6";
+		column-gap: 10px;
+		row-gap: 10px;
+	}
+	#grillaHabanos {
+		display: grid;
+		height: 100%;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 1fr 1fr 1fr;
+		grid-template-areas: "foto1 foto2 ""foto3  foto4" "foto5 foto6";
+		column-gap: 10px;
+		row-gap: 15px;
+	}
+	#grillaVinos {
+		display: grid;
+		height: 100%;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 1fr 1fr 1fr;
+		grid-template-areas: "foto1 foto2 ""foto3 foto4" "foto5 foto6" "info1 info2" "info3";
+		column-gap: 10px;
+		row-gap: 10px;
+	}
+	ul {
+		flex-direction: row;
+	}
+	header {
+		grid-area: header;
+	}
+	nav {
+		grid-area: nav;
+	}
+	main {
+		grid-area: main;
+	}
+	footer {
+		grid-area: footer;
+	}
+}
+@media only screen and (min-width:1000px) {
+	#grilla {
+		display: grid;
+		height: 100%;
+		grid-template-columns: 100%;
+		grid-template-rows: 20% 10% 60% 10%;
+		grid-template-areas: "header" "nav" "main" "footer";
+	}
+	#grillaIndex {
+		display: grid;
+		height: 100%;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-rows: 1fr 1fr;
+		grid-template-areas: "foto1 foto2  foto3" "foto4  foto5 foto6";
+		column-gap: 10px;
+		row-gap: 10px;
+	}
+	#grillaTres {
+		display: grid;
+		height: 100%;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-rows: 1fr;
+		grid-template-areas: "foto1" "foto2" "foto3";
+		justify-items: center;
+		column-gap: 20px;
+		row-gap: 30px;
+	}
+	#grillaEspumantes {
+		display: grid;
+		height: 100%;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-rows: 1fr 1fr;
+		grid-template-areas: "foto1 foto2 foto3 ""foto4  foto5 foto6";
+		column-gap: 10px;
+		row-gap: 10px;
+	}
+	#grillaVinos {
+		display: grid;
+		height: 100%;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-rows: 1fr 1fr ;
+		grid-template-areas: "foto1 foto2  foto3" "foto4  foto5 foto6"  " info 1 info2 info3";
+		column-gap: 10px;
+		row-gap: 10px;
+	}
+	#grillaHabanos {
+		display: grid;
+		height: 100%;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-rows: 1fr 1fr;
+		grid-template-areas: "foto1 foto2  foto3" "foto4  foto5 foto6";
+		column-gap: 10px;
+		row-gap: 10px;
+	}
+	ul {
+		flex-direction: row;
+	}
+	header {
+		grid-area: header;
+	}
+	nav {
+		grid-area: nav;
+	}
+	main {
+		grid-area: main;
+	}
+	footer {
+		grid-area: footer;
+	}
+}
+.imagenf {
+	width: 50px;
+	height: 50px;
+	margin-right: 25px;
+}
+#grillaContacto {
+	margin: 20px;
+}
+.colorBoton {
+	background-color: blueviolet;
+	color: rgb(239, 243, 235);
+}
+.contacto {
+	color: black;
+}
+.infoContacto {
+	padding-top: 30px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+#tituloContacto {
+	padding-left: 30px;
+}
